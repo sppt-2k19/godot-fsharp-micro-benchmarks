@@ -1,0 +1,27 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "godot benchmarks", "godot benchmarks.csproj", "{1737767B-4ADE-4209-869D-9A594BF41DE9}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "fsharp-benchmarks", "fsharp-benchmarks\fsharp-benchmarks.fsproj", "{F57BEBC0-9DD9-4F00-8260-DC0DC1A2E3E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	Release|Any CPU = Release|Any CPU
+	Tools|Any CPU = Tools|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1737767B-4ADE-4209-869D-9A594BF41DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1737767B-4ADE-4209-869D-9A594BF41DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1737767B-4ADE-4209-869D-9A594BF41DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1737767B-4ADE-4209-869D-9A594BF41DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1737767B-4ADE-4209-869D-9A594BF41DE9}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{1737767B-4ADE-4209-869D-9A594BF41DE9}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{F57BEBC0-9DD9-4F00-8260-DC0DC1A2E3E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57BEBC0-9DD9-4F00-8260-DC0DC1A2E3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57BEBC0-9DD9-4F00-8260-DC0DC1A2E3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57BEBC0-9DD9-4F00-8260-DC0DC1A2E3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57BEBC0-9DD9-4F00-8260-DC0DC1A2E3E8}.Tools|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57BEBC0-9DD9-4F00-8260-DC0DC1A2E3E8}.Tools|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

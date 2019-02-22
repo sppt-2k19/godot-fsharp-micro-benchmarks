@@ -2,7 +2,7 @@
 // for more guidance on F# programming.
 
 #load "Library.fs"
-open Benchmarks
+open fsharp_benchmarks
 
 // Define your library scripting code here
 

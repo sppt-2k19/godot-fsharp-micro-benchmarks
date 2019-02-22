@@ -1,11 +1,9 @@
-﻿namespace Benchmarks
-
+﻿namespace fsharp_benchmarks
 module Bench =
     open System.IO
     open System
-    open System.IO
     open Godot
-
+    
     let scaleVector2D scalar =
         let mutable v1 = new Vector2(1.0f, 1.0f)
         v1 <- v1 * float32 scalar
@@ -30,45 +28,45 @@ module Bench =
         
     let translateVector2D i =
         let mutable v1 = new Vector2(1.0f, 1.0f);
-        let v2 = new Vector2(float32 i, float32 i);
-        v1 <- v1 + v2
-        v1.Length()
+        let mutable v2 = new Vector2(float32 i, float32 i);
+        let v3 = v1 + v2
+        v3.Length()
         
     let translateVector3D i =
-        let mutable v1 = new Vector3(1.0f,1.0f,1.0f);
-        let v2 = new Vector3(float32 i, float32 i, float32 i);
-        v1 <- v1 + v2
-        v1.Length()
+        let mutable v1 = new Vector3(1.0f, 1.0f, 1.0f);
+        let mutable v2 = new Vector3(float32 i, float32 i, float32 i);
+        let v3 = v1 + v2
+        v3.Length()
         
     let subtractVector2D i =
-        let mutable v1 = new Vector2(float32 i,float32 i)
+        let mutable v1 = new Vector2(float32 i, float32 i)
         let v2 = new Vector2(1.0f, 1.0f)
         v1 <- v1 - v2
         v1.Length()
         
     let subtractVector3D i =
-        let mutable v1 = new Vector3(float32 i,float32 i,float32 i)
+        let mutable v1 = new Vector3(float32 i, float32 i, float32 i)
         let v2 = new Vector3(1.0f, 1.0f, 1.0f)
         v1 <- v1 - v2
         v1.Length()
         
     let lengthVector2D i =
-        let v1 = new Vector2(float32 i,float32 i)
+        let v1 = new Vector2(float32 i, float32 i)
         v1.Length()
         
     let lengthVector3D i =
-        let v1 = new Vector3(float32 i,float32 i,float32 i)
+        let v1 = new Vector3(float32 i, float32 i, float32 i)
         v1.Length()
         
     let dotProductVector2D i =
         let v1 = new Vector2(1.0f, 1.0f)
-        let v2 = new Vector2(float32 i,float32 i)
-        v1.Dot v2
+        let v2 = new Vector2(float32 i, float32 i)
+        v1.Dot(v2)
         
     let dotProductVector3D i =
-        let v1 = new Vector2(1.0f, 1.0f)
-        let v2 = new Vector2(float32 i,float32 i)
-        v1.Dot v2
+        let v1 = new Vector3(1.0f, 1.0f, 1.0f)
+        let v2 = new Vector3(float32 i, float32 i, float32 i)
+        v1.Dot(v2)
         
     let benchmark msg iterations minTime func =
         let mutable count = 1
@@ -93,7 +91,7 @@ module Bench =
                 totalCount <- totalCount + count
         let mean = deltaTime / float32 iterations
         let standardDeviation = sqrt (deltaTimeSquared - mean * mean * float32 iterations) / float32 (iterations - 1)
-        File.AppendAllText("output.txt", String.Format("{0},{1},{2},{3}\n", msg, mean, standardDeviation, count))
+        File.AppendAllText("output.csv", String.Format("{0},{1},{2},{3}\n", msg, mean, standardDeviation, count))
         dummy / float32 totalCount
 
     type BigClass() = 

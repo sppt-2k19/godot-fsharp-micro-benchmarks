@@ -1,4 +1,4 @@
-﻿namespace Benchmarks.AssemblyInfo
+﻿namespace fsharp_benchmarks.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("Benchmarks")>]
+[<assembly: AssemblyTitle("fsharp_benchmarks")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("Benchmarks")>]
+[<assembly: AssemblyProduct("fsharp_benchmarks")>]
 [<assembly: AssemblyCopyright("Copyright ©  $year$")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
@@ -22,7 +22,7 @@ open System.Runtime.InteropServices
 [<assembly: ComVisible(false)>]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[<assembly: Guid("564F4879-4EEB-48F4-AB00-89BBE01C5A0D")>]
+[<assembly: Guid("F57BEBC0-9DD9-4F00-8260-DC0DC1A2E3E8")>]
 
 // Version information for an assembly consists of the following four values:
 // 
