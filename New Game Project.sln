@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "New Game Project", "New Game Project.csproj", "{E451E591-56F0-459C-B3DB-ED68F5C0F043}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Benchmarks", "Benchmarks\Benchmarks.fsproj", "{564F4879-4EEB-48F4-AB00-89BBE01C5A0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	Release|Any CPU = Release|Any CPU
+	Tools|Any CPU = Tools|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E451E591-56F0-459C-B3DB-ED68F5C0F043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E451E591-56F0-459C-B3DB-ED68F5C0F043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E451E591-56F0-459C-B3DB-ED68F5C0F043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E451E591-56F0-459C-B3DB-ED68F5C0F043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E451E591-56F0-459C-B3DB-ED68F5C0F043}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{E451E591-56F0-459C-B3DB-ED68F5C0F043}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{564F4879-4EEB-48F4-AB00-89BBE01C5A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564F4879-4EEB-48F4-AB00-89BBE01C5A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564F4879-4EEB-48F4-AB00-89BBE01C5A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564F4879-4EEB-48F4-AB00-89BBE01C5A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564F4879-4EEB-48F4-AB00-89BBE01C5A0D}.Tools|Any CPU.ActiveCfg = Debug|Any CPU
+		{564F4879-4EEB-48F4-AB00-89BBE01C5A0D}.Tools|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
